@@ -11,7 +11,8 @@ maven- auto Configuration
 
 # add war file in spring boot:
 
-in pom.xml:
+add this  in pom.xml:
+"<packaging>war</packaging>"
 
 <packaging>war</packaging>
 
