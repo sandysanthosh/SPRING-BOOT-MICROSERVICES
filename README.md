@@ -93,3 +93,5 @@ types -> logging, log4j, logback
 @Positive -> 	The annotated element must be a strictly positive number.
 
 @Size -> 	The annotated element size must be between the specified boundaries (included).
+
+Spring boot metices - actuator
