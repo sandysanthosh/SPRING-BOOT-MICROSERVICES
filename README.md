@@ -95,4 +95,5 @@ types -> logging, log4j, logback
 @Size -> 	The annotated element size must be between the specified boundaries (included).
 
 Spring boot metices - actuator
-Spring security 
+Spring security
+Spring jpa mysql security 
