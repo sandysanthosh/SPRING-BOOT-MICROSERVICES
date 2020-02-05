@@ -103,3 +103,9 @@ App
 @Advice 
 @before 
 @order(0)
+
+@data in Lombok
+
+Will add all getter and setters 
+To string
+Equal and barcode
