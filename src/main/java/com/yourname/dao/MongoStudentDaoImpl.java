@@ -17,6 +17,7 @@ public class MongoStudentDaoImpl implements StudentDao {
         return new ArrayList<Student>(){
             {
                 add(new Student(1, "Mario", "Nothing"));
+                add(new Student(2, "sandy", "Nothing"));
             }
         };
     }
