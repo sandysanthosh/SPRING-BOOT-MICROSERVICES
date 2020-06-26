@@ -30,12 +30,15 @@ add this  in pom.xml:
 }
 
 # In employee class:
+ 
+'''
 
 if(emloyee == null)
 {
 throw new RecordNotFoundException ("InvalidEmployeeid" : "id");
 }
 
+'''
 # run build:
 
 In goals ->clean install
