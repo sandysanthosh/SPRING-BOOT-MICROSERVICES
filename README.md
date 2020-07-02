@@ -107,6 +107,9 @@ App
 @Advice 
 @before 
 @order(0)
+@after
+@afterAdvice
+@beforeReturningAdvice
 
 @data in Lombok
 
@@ -114,6 +117,7 @@ Will add all getter and setters
 To string
 Equal and barcode
 
+@NOTnull
 
 
 <a href="http://starwalt.in/Blogs/index.html">Follow us on Blog</a>
