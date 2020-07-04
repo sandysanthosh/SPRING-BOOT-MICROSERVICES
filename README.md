@@ -1,4 +1,5 @@
 # SpringBootIn50
+
 Source code for https://www.youtube.com/watch?v=Ke7Tr4RgRTs
 
 #### Instructions
@@ -106,20 +107,45 @@ In goals ->clean install
 
 #### App annotation:
 
-* @Advice  
-* @before 
-* @order(0)
-* @after
-* @afterAdvice
-* @beforeReturningAdvice
+		* @Advice  
+		* @before 
+		* @order(0)
+		* @after
+		* @afterAdvice
+		* @beforeReturningAdvice
 
 #### @data in Lombok
 
-* Will add all getter and setters 
-* To string
-* Equal and barcode
+	* Will add all getter and setters 
+	* To string
+	* Equal and barcode
 
 @NOTnull
+
+
+#### Web App:
+
+	* request
+	* response
+	* get
+	* post
+	* jsp
+	* jstl
+	* bootstrap
+
+#### Spring mvc:
+
+	* dispatcher servlet
+	* view resolver
+	* model 
+	* view
+	* validation 
+	* form tags
+
+#### Spring Boot:
+
+	* starterss
+	* Autoconfiguration
 
 
 <a href="http://starwalt.in/Blogs/index.html">Follow us on Blog</a>
