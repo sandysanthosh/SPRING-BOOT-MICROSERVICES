@@ -146,6 +146,10 @@ In goals ->clean install
 
 	* starterss
 	* Autoconfiguration
+	* Initializr
+	* actuator
+ 	* embedded servers
 
 
-<a href="http://starwalt.in/Blogs/index.html">Follow us on Blog</a>
+
+<a href="http://starwalt.in">Follow us on Blog</a>
