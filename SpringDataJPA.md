@@ -61,22 +61,22 @@ package com.example.demo;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 @RestController    
 public class UserController   
 {    
 @Autowired    
 private UserService userService;     
 @RequestMapping("/")    
-public List<UserRecord> getAllUser()  
+public List<User> getAllUser()  
 {    
 return userService.getAllUsers();    
 }       
 @RequestMapping(value="/add-user", method=RequestMethod.POST)    
-public void addUser(@RequestBody UserRecord userRecord)  
+public void addUser(@RequestBody User userRecord)  
 {    
 userService.addUser(userRecord);    
 }       
+}      
 
 ```
 
