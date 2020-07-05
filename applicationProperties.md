@@ -43,4 +43,3 @@ There are sixteen categories of Spring Boot Property are as follows:
 * Actuator Properties
 * DevTools Properties
 * Testing Properties
-
