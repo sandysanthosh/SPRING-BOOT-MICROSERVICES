@@ -89,23 +89,24 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;  
 import com.example.model.UserRecord;  
 import com.example.repository.UserRepository;    
+
 @Service    
 public class UserService   
 {    
 @Autowired    
 private UserRepository userRepository;    
-public List<UserRecord> getAllUsers()  
+public List<User> getAllUsers()  
 {    
-List<UserRecord>userRecords = new ArrayList<>();    
+List<User>userRecords = new ArrayList<>();    
 userRepository.findAll().forEach(userRecords::add);    
 return userRecords;    
 }    
-public void addUser(UserRecord userRecord)  
+public void addUser(User userRecord)  
 {    
 userRepository.save(userRecord);    
 }    
-
 }
+
 ```
 
 #### UserRepository.java:
@@ -114,7 +115,7 @@ userRepository.save(userRecord);
 
 import org.springframework.data.repository.CrudRepository;  
 import com.example.model.UserRecord;    
-public interface UserRepository extends CrudRepository<UserRecord, String>   
+public interface UserRepository extends CrudRepository<User, String>   
 {    
 }    
 
