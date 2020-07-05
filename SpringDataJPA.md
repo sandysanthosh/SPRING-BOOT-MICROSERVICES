@@ -134,6 +134,31 @@ SpringApplication.run(ApacheDerbyExampleApplication.class, args);
 
 ```
 
+#### Test the link:
 
+http://localhost:8080/add-user
 
+#### Add in Postman:
 
+->raw ->JSON
+
+```
+{  
+"id": "001",  
+"name": "Tom",  
+"email": "tom@gmail.com"  
+}  
+
+```
+
+#### Test the link in browser:
+
+http://localhost:8080
+
+```
+{  
+"id": "001",  
+"name": "Tom",  
+"email": "tom@gmail.com"  
+}  
+```
