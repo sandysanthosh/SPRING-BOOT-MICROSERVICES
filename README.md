@@ -1,23 +1,5 @@
 # SpringBootIn50:
 
-Source code for https://www.youtube.com/watch?v=Ke7Tr4RgRTs
-
-#### Instructions:
-
-	* Open pom.xml with Intelij or Eclipse
-	* Run Main.java
-	* Open browser on http://localhost:8080
-
-``` maven- auto Configuration ```
-
-
-#### add war file in spring boot:
-
-* Add this  in pom.xml:
-
-``` <packaging>war</packaging> ```
-
-
 ### SPRING-BOOT-MICROSERVICES Annotations:
 
 
@@ -68,42 +50,8 @@ Source code for https://www.youtube.com/watch?v=Ke7Tr4RgRTs
 * **@RestController:** It can be considered as a combination of @Controller and @ResponseBody annotations. The @RestController annotation is itself annotated with the @ResponseBody annotation. It eliminates the need for annotating each method with @ResponseBody.
 
 * **@RequestAttribute:** It binds a method parameter to request attribute. It provides convenient access to the request attributes from a controller method. With the help of @RequestAttribute annotation, we can access objects that are populated on the server-side.
-## 
-
-
-
-#### error handling:
-
-	 * @NotEmpty
-	 * @Email
- 
- ```
- public class RecordNotFoundException extends RuntimeException
-{
-    public RecordNotFoundException(String exception) {
-        super(exception);
-    }
-}
-```
-
-# In employee class:
- 
-``` 
-
-if(emloyee == null)
-{
-throw new RecordNotFoundException ("InvalidEmployeeid" : "id");
-}
-
-```
-
-# Run build:
-
-In goals ->clean install
-
 
 # Boot-starter-logging:
-
 
 * internal Logger -> Apache Commons Logging 
 
@@ -204,7 +152,6 @@ In goals ->clean install
 	* Initializr
 	* actuator
  	* embedded servers
-
 
 
 <a href="http://starwalt.in">Follow us on Blog</a>
