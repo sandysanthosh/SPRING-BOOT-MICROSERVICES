@@ -1,7 +1,30 @@
 
-## 
 
-Source code for https://www.youtube.com/watch?v=Ke7Tr4RgRTs
+#### Spring Boot Starters to test in Java:
+
+
+```
+
+import org.springframework.boot.*;
+import org.springframework.boot.autoconfigure.*;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@SpringBootApplication
+public class Example {
+
+	@RequestMapping("/")
+	String home() {
+		return "Hello World!";
+	}
+
+	public static void main(String[] args) {
+		SpringApplication.run(Example.class, args);
+	}
+
+}
+
+```
 
 #### Instructions:
 
