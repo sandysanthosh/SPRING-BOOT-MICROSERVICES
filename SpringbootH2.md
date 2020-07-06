@@ -1,9 +1,10 @@
-Spring boot  h2
+#### Spring boot  h2
 
-Inmeory database 
+* Inmemory database 
 
+Pom.xml:
 
-'''
+```
 
 <dependency>  
 <groupId>com.h2database</groupId>  
@@ -11,4 +12,5 @@ Inmeory database
 <scope>runtime</scope>  
 </dependency>  
 
-'''
+```
+
