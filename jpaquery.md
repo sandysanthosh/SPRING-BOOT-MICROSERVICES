@@ -2,6 +2,11 @@ Reference:
 
 https://docs.spring.io/spring-data/jpa/docs/1.5.0.RELEASE/reference/html/repository-query-keywords.html
 
+DataJPA:
+
+https://docs.spring.io/spring-data/data-jpa/docs/2.2.8.RELEASE/reference/html/#project
+
+
 <p>The following table lists the keywords generally supported by the
 Spring Data repository query derivation mechanism. However, consult the
 store-specific documentation for the exact list of supported keywords,
