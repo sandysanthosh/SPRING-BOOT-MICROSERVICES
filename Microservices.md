@@ -5,6 +5,13 @@
 Explicit declaration
 
 
+Own port 
+Own service 
+Own deployment
+
+Netflix 
+Amazon
+Ebay
 
 microservices architecture and its components like RabbitMQ Server, 
 Eureka Naming Server,
