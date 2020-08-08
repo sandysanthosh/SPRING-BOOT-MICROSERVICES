@@ -105,7 +105,11 @@
 
 	Spring boot metices - actuator
 	Spring security
-	Spring jpa mysql security 
+
+
+Server:
+    Jetty
+    Spring jpa mysql security 
 
 #### App annotation:
 
