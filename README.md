@@ -158,6 +158,15 @@ Server:
 
 External config:
 
+MSA:
+
+* Collection of small autonomous 
+* Small multiple services 
+* All component seperate module
+* Stateless communication
+
+
+
 
 <a href="http://starwalt.in">Follow us on Blog</a>
 
