@@ -9,6 +9,8 @@ Own port
 Own service 
 Own deployment
 
+Kafka
+
 Netflix 
 Amazon
 Ebay
