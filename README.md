@@ -169,7 +169,14 @@ Advantage:
 
 * easy to maintain
 * Continuous Delivery 
-* Hybrid Technology
+* Hybrid Technology -java csharp mysql
+* Cross Team coordination
+* Higher Quality code
+* Smarter Scaling
+* Risk Reduction -Seperation of services allowed for localized changes
+* Promote Big Data Best Practises
+* Improved ROI with Reduced TCO
+
 
 
 
