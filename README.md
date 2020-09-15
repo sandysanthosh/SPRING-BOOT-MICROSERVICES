@@ -165,6 +165,11 @@ MSA:
 * All component seperate module
 * Stateless communication
 
+Advantage:
+
+* easy to maintain
+* Continuous Delivery 
+* Hybrid Technology
 
 
 
