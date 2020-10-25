@@ -105,15 +105,9 @@
 
 	@Size -> 	The annotated element size must be between the specified boundaries (included).
 
-	Spring boot metices - actuator
-	Spring security
+	
 
-
-Server:
-    Jetty
-    Spring jpa mysql security 
-
-#### App annotation:
+#### AOP annotation:
 
 		* @Advice  
 		* @before 
@@ -121,6 +115,29 @@ Server:
 		* @after
 		* @afterAdvice
 		* @beforeReturningAdvice
+
+#### Junit Test annotation:
+
+		* @BeforeClass 
+		* @Before
+		* @Test
+		* @After
+		* @AfterClass
+		
+#### arious Assest Statement:
+
+```
+Void  equals(boolean exptation, boolean Actual)
+Void  Notequals(boolean exptation, boolean Actual)
+Void  assertTrue(boolean condition)
+Void  assertFalse(boolean condition)
+Void  assertNull(Object object)
+Void  assertNotNull(Object object)
+Void  assertSame(Object object1,Object object 2)
+Void  assertNotSame(Object object1,Object object 2)	
+void assertArrayEquals(expectedArray, resultArray);
+
+```
 
 #### @data in Lombok
 
@@ -253,7 +270,10 @@ spring.cloud.config.uri=http://localhost:8888
 
 spring.rabbitmq.addresses=amqps://ailhzrhf:pnHKsJmZxwUZwUh_P7wEBiiD37BrfCnQ@finch.rmq.cloudamqp.com/ailhzrhf
 
-
+Server:
+    Jetty
+    Spring jpa mysql security 
+    
 ```
 
 
