@@ -277,5 +277,5 @@ Server:
 ```
 
 
-<a href="http://starwalt.in/blog>Follow us on Blog</a>
+<a href="http://starwalt.in/blog> Follow us on Blog </a>
 
