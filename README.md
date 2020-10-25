@@ -225,6 +225,37 @@ Server:
 * Admin processes = Run admin/management tasks as one-off processes
 
 
+#### Properties in Spring Boot:
 
-<a href="http://starwalt.in">Follow us on Blog</a>
+
+
+```
+#MYSQL DB Properties
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.url=jdbc:mysql://localhost:3306/dbname
+spring.datasource.username=root
+spring.datasource.password=root
+
+#JPA Properties
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.generate-ddl=true
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+
+#Eureka Properties
+eureka.client.register-with-eureka=true
+eureka.client.fetch-registry=true
+eureak.instance.hostnam=localhost
+management.endpoints.web.exposure.include=*
+eureka.client.serviceUrl.defaultZone = http://localhost:8761/eureka
+
+spring.cloud.config.uri=http://localhost:8888
+
+spring.rabbitmq.addresses=amqps://ailhzrhf:pnHKsJmZxwUZwUh_P7wEBiiD37BrfCnQ@finch.rmq.cloudamqp.com/ailhzrhf
+
+
+```
+
+
+<a href="http://starwalt.in/blog>Follow us on Blog</a>
 
