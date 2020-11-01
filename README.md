@@ -277,5 +277,10 @@ Server:
 ```
 
 
-<a href="http://starwalt.in/blog> Follow us on Blog </a>
+<a href="http://starwalt.in/Blogs/index.html">Follow us on Blog</a>
+
+<div align="right">
+    <b><a href="#table-of-contents">↥ Back To Top</a></b>
+</div>
+
 
