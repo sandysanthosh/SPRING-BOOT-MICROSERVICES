@@ -52,6 +52,10 @@
 
 * **@RequestAttribute:** It binds a method parameter to request attribute. It provides convenient access to the request attributes from a controller method. With the help of @RequestAttribute annotation, we can access objects that are populated on the server-side.
 
+* **@EnableSwagger2:** Mainly used for documentation the Restful we-service 
+
+* **@EnableOAuth2Sso:** Oauth Authentication 
+
 # Boot-starter-logging:
 
 * internal Logger -> Apache Commons Logging 
@@ -274,6 +278,19 @@ Server:
     Jetty
     Spring jpa mysql security 
     
+
+security:
+  oauth2:
+    client:
+       clientId: a48f56f893775afb1912
+       clientSecret: c91036f105c04d0666655f411f716c43b606d373
+       accessTokenUri: https://github.com/login/oauth/access_token
+       userAuthorizationUri: https://github.com/login/oauth/authorize
+       clientAuthenticationScheme: form
+    resource:
+      user-info-uri: https://api.github.com/user
+      prefer-token-info: false 
+
 ```
 
 ![sb](https://user-images.githubusercontent.com/11579239/98439635-26930380-2119-11eb-818a-08535c9368f7.png)
