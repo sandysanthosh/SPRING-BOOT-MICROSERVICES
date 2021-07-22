@@ -2,6 +2,7 @@
 
 ### SPRING-BOOT-MICROSERVICES Annotations:
 
+
 #### No beans.xml
 
 * **@Required:** It applies to the bean setter method. It indicates that the annotated bean must be populated at configuration time with the required property, else it throws an exception BeanInitilizationException.
