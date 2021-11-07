@@ -1,5 +1,85 @@
 # SpringBoot:
 
+* Spring Boot is a project that is built on the top of the Spring Framework. 
+
+* It provides an easier and faster way to set up, configure, and run both simple and web-based applications.
+
+#### Why should we use Spring Boot Framework?
+
+We should use Spring Boot Framework because:
+
+* The dependency injection approach is used in Spring Boot.
+
+* It contains powerful database transaction management capabilities.
+
+* It simplifies integration with other Java frameworks like JPA/Hibernate ORM, Struts, etc.
+
+* It reduces the cost and development time of the application.
+
+* Along with the Spring Boot Framework, many other Spring sister projects help to build applications addressing modern business needs.
+
+####  There are the following Spring sister projects are as follows:
+
+* Spring Data: It simplifies data access from the relational and NoSQL databases.
+
+* Spring Batch: It provides powerful batch processing.
+
+* Spring Security: It is a security framework that provides robust security to applications.
+
+* Spring Social: It supports integration with social networking like LinkedIn.
+
+* Spring Integration: It is an implementation of Enterprise Integration Patterns.
+
+It facilitates integration with other enterprise applications using lightweight messaging and declarative adapters.
+
+#### Advantages of Spring Boot:
+
+* It creates stand-alone Spring applications that can be started using Java -jar.
+
+* It tests web applications easily with the help of different Embedded HTTP servers such as Tomcat, Jetty, etc. We don't need to deploy WAR files.
+
+* It provides opinionated 'starter' POMs to simplify our Maven configuration.
+
+* It provides production-ready features such as metrics, health checks, and externalized configuration.
+
+* There is no requirement for XML configuration.
+
+* It offers a CLI tool for developing and testing the Spring Boot application.
+
+* It offers the number of plug-ins.
+
+* It also minimizes writing multiple boilerplate codes (the code that has to be included in many places with little or no alteration), XML configuration, and annotations.
+
+* It increases productivity and reduces development time.
+
+
+#### Limitations of Spring Boot:
+
+
+Spring Boot can use dependencies that are not going to be used in the application. These dependencies increase the size of the application.
+
+#### Spring Boot Features:
+
+* Web Development
+
+* SpringApplication
+
+* Application events and listeners
+
+* Admin features
+
+* Externalized Configuration
+
+* Properties Files
+
+* YAML Support
+
+* Type-safe Configuration
+
+* Logging
+
+* Security
+
 ### SPRING-BOOT-MICROSERVICES Annotations:
 
 
@@ -69,6 +149,7 @@
 
 *  Types -> logging, log4j, logback
 
+	```
   	LOGGER.debug("This is a debug message");
  
 	LOGGER.info("This is an info message");
@@ -76,11 +157,11 @@
 	LOGGER.warn("This is a warn message");
   
 	LOGGER.error("This is an error message");
-
+	```
 
 # REST request validation annotations:
 
-	@AssertFalse -> 	The annotated element must be false.
+	@AssertFalse -> The annotated element must be false.
 
 	@AssertTrue -> 	The annotated element must be true.
 
@@ -114,12 +195,12 @@
 
 #### AOP annotation:
 
-		* @Advice  
-		* @before 
-		* @order(0)
-		* @after
-		* @afterAdvice
-		* @beforeReturningAdvice
+	
+	*   @Before: declares the before advice. It is applied before calling the actual method.
+        *   @After: declares the after advice. It is applied after calling the actual method and before returning result.
+        *   @AfterReturning: declares the after returning advice. It is applied after calling the actual method and before returning result.
+        *   @Around: declares the around advice. It is applied before and after calling the actual method.
+        *   @AfterThrowing: declares the throws advice. It is applied if actual method throws exception.
 
 #### Junit Test annotation:
 
@@ -129,7 +210,7 @@
 		* @After
 		* @AfterClass
 		
-#### arious Assest Statement:
+#### Various Assest Statement:
 
 ```
 Void  equals(boolean exptation, boolean Actual)
@@ -144,15 +225,31 @@ void assertArrayEquals(expectedArray, resultArray);
 
 ```
 
-#### @data in Lombok
+#### Lombok
 
+	*Project Lombok is a Java library tool that generates code for minimizing boilerplate code.
+	
+	*The library replaces boilerplate code with easy-to-use annotations.
+	
 	* Will add all getter and setters 
+	
 	* To string
+	
 	* Equal and barcode
+	
+#### Spring Boot with Lombok post. In this part I’ll discuss the following Lombok constructs:
+	
+	```
+	
+	var and val
+	@Getter, @Setter
+	@NoArgsConstructor, @AllArgsConstructor
+	@Data
+	@NotNull
+	
+	```
 
-@NOTnull
-
-
+	
 #### Web App:
 
 	* request
@@ -248,9 +345,38 @@ void assertArrayEquals(expectedArray, resultArray);
 
 
 #### Properties in Spring Boot:
-
-
-
+	
+The application.properties file allows us to run an application in a different environment. In short, we can use the application.properties file to:
+	
+```
+* Configure the Spring Boot framework
+	
+* define our application custom configuration properties
+	
+```
+#### Spring Boot Property Categories:
+	
+There are sixteen categories of Spring Boot Property are as follows:
+	
+```
+Core Properties
+Cache Properties
+Mail Properties
+JSON Properties
+Data Properties
+Transaction Properties
+Data Migration Properties
+Integration Properties
+Web Properties
+Templating Properties
+Server Properties
+Security Properties
+RSocket Properties
+Actuator Properties
+DevTools Properties
+Testing Properties
+```
+	
 ```
 #MYSQL DB Properties
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
@@ -293,8 +419,47 @@ security:
       prefer-token-info: false 
 
 ```
+#### Spring Boot DevTools
+
 	
-	### Microservies-MSA
+DevTools stands for Developer Tool. The aim of the module is to try and improve the development time while working with the Spring Boot application.
+	
+Spring Boot DevTools pick up the changes and restart the application.
+
+We can implement the DevTools in our project by adding the following dependency in the pom.xml file.
+
+```	
+<dependency>  
+<groupId>org.springframework.boot</groupId>  
+<artifactId>spring-boot-devtools</artifactId>  
+<scope>runtime<scope >  
+</dependency>
+```	
+
+##### Spring Boot DevTools provides the following features:
+
+```	
+* Property Defaults
+* Automatic Restart
+* LiveReload
+* Remote Debug Tunneling
+* Remote Update and Restart	
+```	
+
+##### LiveReload works on the following path:
+	
+```
+	
+/META-INF/maven
+/META-INF/resources
+/resources
+/static
+/public
+/templates
+	
+```
+	
+### Microservies-MSA
 
 ###  Springboot with Microservies 
 
@@ -317,7 +482,7 @@ security:
 * The Microservices Architecture (MSA) decomposes systems into discrete, individual, standalone components that can communicate amongst themselves, working together or with external systems.
 
 
-** MSA is a more agile framework that fits well with the cloud-based world and lends itself well to web application development and web service development.**
+* MSA is a more agile framework that fits well with the cloud-based world and lends itself well to web application development and web service development.
 
 #### MSA Features:
 
