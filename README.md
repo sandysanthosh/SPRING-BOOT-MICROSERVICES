@@ -4,7 +4,7 @@
 
 * It provides an easier and faster way to set up, configure, and run both simple and web-based applications.
 
-#### Why should we use Spring Boot Framework?
+### Why should we use Spring Boot Framework?
 
 We should use Spring Boot Framework because:
 
