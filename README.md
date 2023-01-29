@@ -593,6 +593,35 @@ HTTP defines these standard status codes that can be used to convey the results 
 
 ```
 
+##### There are several ways to communicate between two Spring Boot applications:
+
+##### RESTful web services: 
+
+One application can expose its functionality as RESTful web services, which can be consumed by the other application using Spring's RestTemplate or WebClient.
+
+##### Messaging: 
+
+Applications can use a messaging system such as Apache Kafka or RabbitMQ to send and receive messages. Spring provides support for both of these systems through the Spring Kafka and Spring Rabbit projects.
+
+##### Feign client: 
+
+One application can use the Feign client to make remote calls to the other application. Feign is a declarative web service client and can be used to communicate between applications using HTTP.
+
+##### gRPC:
+
+Applications can use gRPC to communicate with each other. gRPC is a high-performance, open-source framework for building remote procedure call (RPC) APIs. Spring provides support for gRPC through the Spring gRPC project.
+
+##### Data sharing:
+
+Applications can share data through a shared database or a data cache such as Redis or memcached. Spring provides support for various data sharing options through its Spring Data project.
+
+##### Service Discovery: 
+
+Spring Cloud provides a way to register and discover microservices, one application can use service discovery to communicate with the other application.
+
+It's depend on your requirement which one you want to use for communication between two spring boot application.
+
+
 ```
 
 Package Details:
