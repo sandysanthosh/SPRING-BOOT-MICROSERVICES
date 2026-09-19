@@ -674,6 +674,9 @@ Verify the application is responding:
 ```bash
 curl http://localhost:8080/api/ping
 # pong
+
+curl "http://localhost:8080/api/echo?message=hello"
+# {"message":"hello"}
 ```
 
 Run the automated checks locally with:
