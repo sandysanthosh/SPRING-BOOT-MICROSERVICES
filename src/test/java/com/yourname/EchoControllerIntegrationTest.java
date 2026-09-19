@@ -1,8 +1,8 @@
 package com.yourname;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.setup.MockMvcBuilders.webAppContextSetup;
 
 import org.junit.Before;
@@ -34,6 +34,6 @@ public class EchoControllerIntegrationTest {
     public void echoesRequestMessageAsJson() throws Exception {
         mockMvc.perform(get("/api/echo").param("message", "hello"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.message").value("hello"));
+                .andExpect(content().string("{\"message\":\"hello\"}"));
     }
 }
