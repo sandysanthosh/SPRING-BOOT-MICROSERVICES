@@ -653,3 +653,7 @@ Package Details:
 
 
 
+
+## Modern Spring Cloud note
+
+This repository includes concepts and components common in earlier microservices examples. For recommended choices in newer Spring applications—such as Spring Cloud LoadBalancer, Resilience4j, Spring Cloud Gateway, and Micrometer Tracing—see [Modern Spring Cloud Guidance](docs/modern-spring-cloud-guidance.md).
