@@ -1,3 +1,6 @@
+[![Maven build](https://github.com/sandysanthosh/SPRING-BOOT-MICROSERVICES/actions/workflows/maven.yml/badge.svg)](https://github.com/sandysanthosh/SPRING-BOOT-MICROSERVICES/actions/workflows/maven.yml)
+[![CodeQL](https://github.com/sandysanthosh/SPRING-BOOT-MICROSERVICES/actions/workflows/codeql.yml/badge.svg)](https://github.com/sandysanthosh/SPRING-BOOT-MICROSERVICES/actions/workflows/codeql.yml)
+
 # SpringBoot:
 
 * Spring Boot is a project that is built on the top of the Spring Framework. 
