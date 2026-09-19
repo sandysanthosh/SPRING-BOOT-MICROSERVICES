@@ -657,3 +657,24 @@ Package Details:
 ## Modern Spring Cloud note
 
 This repository includes concepts and components common in earlier microservices examples. For recommended choices in newer Spring applications—such as Spring Cloud LoadBalancer, Resilience4j, Spring Cloud Gateway, and Micrometer Tracing—see [Modern Spring Cloud Guidance](docs/modern-spring-cloud-guidance.md).
+
+## Run the sample locally
+
+This legacy sample targets Java 8 and Maven.
+
+```bash
+mvn spring-boot:run
+```
+
+Verify the application is responding:
+
+```bash
+curl http://localhost:8080/api/ping
+# pong
+```
+
+Run the automated checks locally with:
+
+```bash
+mvn verify
+```
