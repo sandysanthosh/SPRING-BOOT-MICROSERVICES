@@ -1,25 +1,20 @@
 package com.yourname;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * Minimal, runnable Spring Boot application entry point.
+ * Shared HTTP client configuration for the standalone Spring Boot sample.
  *
- * Add service discovery and inter-service clients in a complete
- * microservices module with its required dependencies and configuration.
+ * The application entry point is Main.java. Add service discovery and
+ * microservice clients in complete modules with their dependencies.
  */
-@SpringBootApplication
-public class WebServer {
-
-    public static void main(String[] args) {
-        SpringApplication.run(WebServer.class, args);
-    }
+@Configuration
+class WebServerConfiguration {
 
     @Bean
-    public RestTemplate restTemplate() {
+    RestTemplate restTemplate() {
         return new RestTemplate();
     }
 }
