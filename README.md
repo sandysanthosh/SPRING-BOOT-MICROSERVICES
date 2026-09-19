@@ -399,7 +399,9 @@ eureka.client.serviceUrl.defaultZone = http://localhost:8761/eureka
 
 spring.cloud.config.uri=http://localhost:8888
 
-spring.rabbitmq.addresses=amqps://ailhzrhf:pnHKsJmZxwUZwUh_P7wEBiiD37BrfCnQ@finch.rmq.cloudamqp.com/ailhzrhf
+# Keep connection strings and credentials out of source control.
+# Supply them through environment variables or a secret manager.
+spring.rabbitmq.addresses=${RABBITMQ_URL}
 
 Server:
     Jetty
@@ -409,8 +411,8 @@ Server:
 security:
   oauth2:
     client:
-       clientId: a48f56f893775afb1912
-       clientSecret: c91036f105c04d0666655f411f716c43b606d373
+       clientId: ${OAUTH2_CLIENT_ID}
+       clientSecret: ${OAUTH2_CLIENT_SECRET}
        accessTokenUri: https://github.com/login/oauth/access_token
        userAuthorizationUri: https://github.com/login/oauth/authorize
        clientAuthenticationScheme: form
